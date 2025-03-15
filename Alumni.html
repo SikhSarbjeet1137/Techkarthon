@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎓 Our Alumni Network</h1>
+        <p>Connecting the past, inspiring the future!</p>
+    </header>
+
+    <!-- IT Department -->
+    <section class="department">
+        <img src="it-logo.png" class="dept-logo" alt="IT Department">
+        <h2>💻 IT & Software Engineering</h2>
+        <div class="carousel">
+            <div class="alumni-card" onclick="openModal('John Doe', '2018', 'Software Engineer at Google')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="john.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2018</p>
+                        <p>Software Engineer</p>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Emma Smith', '2017', 'Data Scientist at Microsoft')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="emma.jpg" alt="Emma Smith">
+                        <h3>Emma Smith</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2017</p>
+                        <p>Data Scientist</p>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Chris Brown', '2019', 'Cybersecurity Analyst at IBM')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="chris.jpg" alt="Chris Brown">
+                        <h3>Chris Brown</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2019</p>
+                        <p>Cybersecurity Analyst</p>
+                        <p>IBM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Sophia Green', '2020', 'Cloud Engineer at AWS')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="sophia.jpg" alt="Sophia Green">
+                        <h3>Sophia Green</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2020</p>
+                        <p>Cloud Engineer</p>
+                        <p>AWS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accounting Department -->
+    <section class="department">
+        <img src="accounting-logo.png" class="dept-logo" alt="Accounting Department">
+        <h2>📊 Accounting & Finance</h2>
+        <div class="carousel">
+            <div class="alumni-card" onclick="openModal('Michael Lee', '2016', 'Financial Analyst at JP Morgan')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="michael.jpg" alt="Michael Lee">
+                        <h3>Michael Lee</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2016</p>
+                        <p>Financial Analyst</p>
+                        <p>JP Morgan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Sophia Brown', '2019', 'Tax Consultant at Deloitte')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="sophia.jpg" alt="Sophia Brown">
+                        <h3>Sophia Brown</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2019</p>
+                        <p>Tax Consultant</p>
+                        <p>Deloitte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Robert Wilson', '2018', 'Auditor at KPMG')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="robert.jpg" alt="Robert Wilson">
+                        <h3>Robert Wilson</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2018</p>
+                        <p>Auditor</p>
+                        <p>KPMG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Lily Adams', '2017', 'Investment Banker at Goldman Sachs')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="lily.jpg" alt="Lily Adams">
+                        <h3>Lily Adams</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2017</p>
+                        <p>Investment Banker</p>
+                        <p>Goldman Sachs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Department -->
+    <section class="department">
+        <img src="management-logo.png" class="dept-logo" alt="Management Department">
+        <h2>🏢 Business & Management</h2>
+        <div class="carousel">
+            <div class="alumni-card" onclick="openModal('David Kim', '2015', 'Product Manager at Amazon')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="david.jpg" alt="David Kim">
+                        <h3>David Kim</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2015</p>
+                        <p>Product Manager</p>
+                        <p>Amazon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Olivia Johnson', '2018', 'Marketing Head at Tesla')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="olivia.jpg" alt="Olivia Johnson">
+                        <h3>Olivia Johnson</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2018</p>
+                        <p>Marketing Head</p>
+                        <p>Tesla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Nathan Scott', '2020', 'HR Manager at Uber')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="nathan.jpg" alt="Nathan Scott">
+                        <h3>Nathan Scott</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2020</p>
+                        <p>HR Manager</p>
+                        <p>Uber</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-card" onclick="openModal('Emily White', '2016', 'Operations Manager at Airbnb')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="emily.jpg" alt="Emily White">
+                        <h3>Emily White</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Graduation: 2016</p>
+                        <p>Operations Manager</p>
+                        <p>Airbnb</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <a href="main.html" class="back-button">⬅ Back to Main File</a>
+
+    <script src="java.js"></script>
+</body>
+</html>

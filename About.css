@@ -1,0 +1,194 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F4F8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: royalblue;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* About Section */
+.about-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+    text-align: left;
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: royalblue;
+    margin-bottom: 15px;
+}
+
+.about-text p, .about-text ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.about-text ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: royalblue;
+    font-size: 1.2rem;
+}
+
+/* Alternating Layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Join Section */
+.join-section {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.join-section h2 {
+    font-size: 2rem;
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+.join-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.join-form input,
+.join-form textarea,
+.join-form button {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    border-color: royalblue;
+    outline: none;
+    box-shadow: 0 0 5px rgba(65, 105, 225, 0.4);
+}
+
+.join-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.join-form button {
+    background: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.join-form button:hover {
+    background: #003366;
+}
+
+/* Back to Main File Button */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: royalblue;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .about-text, .about-img {
+        width: 100%;
+    }
+    .reverse {
+        flex-direction: column;
+    }
+}

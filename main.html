@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Alumni Association</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">GLS</div>
+
+        <!-- Navbar Links -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="Alumni.html">Alumni</a>
+            <a href="event.html">Events</a>
+            <a href="#">Resources</a>
+            <a href="About.html">About</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <span class="search-icon" onclick="toggleSearch()">🔍</span>
+            <input type="text" class="search-box" placeholder="Search...">
+        </div>
+
+        <!-- Login & Sign-Up Buttons -->
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Section: Video + Campus & Mentorship -->
+        <div class="video-container">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br><br>
+            <div class="campus-mentorship">
+                <div class="capsule">GLS Campus</div>
+                <div class="capsule">Mentorship</div>
+            </div>
+        </div>
+
+        <!-- Right Section: Text Content -->
+        <div class="text-container">
+            <div class="capsule">University Alumni Association</div>
+            <h1>Connect With Your <br><span>University</span> Community</h1>
+            <p>Join our network and stay connected with alumni, mentors, and opportunities.
+                "Expand your professional and personal connections with our vibrant alumni community. By joining the network, you gain access to exclusive events, career opportunities, and lifelong friendships. <br>
+                Connect with industry leaders, collaborate on innovative projects, and stay updated with the latest university advancements.
+                <br> The power of networking starts here—be a part of something bigger!"
+            </p>
+            <div class="cta-buttons">
+             
+                <button class="network-btn">Join the Network</button>
+                <button class="learn-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+ <!-- Border Line Above -->
+<div class="section-border"></div>
+
+<!-- Two-Column Layout -->
+<div class="content-section">
+    <!-- Left Column (H2) -->
+    <div class="left-column">
+        <h2>Everything You Need <br>to Stay Connected</h2>
+    </div>
+
+    <!-- Right Column (Paragraph) -->
+    <div class="right-column">
+        <p >
+            Stay engaged with our vibrant community. Connect with alumni and professionals to expand your network.  
+            Explore new career and learning opportunities through mentorship programs and exclusive job offers.  
+            Attend webinars, workshops, and industry events to enhance your knowledge and skills.  
+            Join a thriving community where knowledge, experience, and opportunities come together.
+        </p>
+    </div>
+</div>
+
+
+<!-- 6 Curved Rectangle Boxes -->
+<div class="grid-container">
+    <div class="box">
+        <img src="Safai.png" alt="Alumni Meet">
+        <span>Alumni Meet</span>
+    </div>
+    <div class="box">
+        <img src="Safai.png" alt="Career Guidance">
+        <span>Career Guidance</span>
+    </div>
+    <div class="box">
+        <img src="Safai.png" alt="Webinars">
+        <span>Webinars</span>
+    </div>
+    <div class="box">
+        <img src="Safai.png" alt="Networking Events">
+        <span>Networking Events</span>
+    </div>
+    <div class="box">
+        <img src="Safai.png" alt="Job Opportunities">
+        <span>Job Opportunities</span>
+    </div>
+    <div class="box">
+        <img src="Safai.png" alt="Workshops">
+        <span>Workshops</span>
+    </div>
+</div>
+
+<!-- Border Line Before Alumni Success -->
+<div class="section-border"></div>
+ <!-- Alumni Section -->
+ <section class="alumni-section">
+    <h2>Our Successful Alumni</h2>
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <div class="slide"><img src="alumni1.jpg" alt="Alumni 1"></div>
+            <div class="slide"><img src="alumni2.jpg" alt="Alumni 2"></div>
+            <div class="slide"><img src="alumni3.jpg" alt="Alumni 3"></div>
+            <div class="slide"><img src="alumni4.jpg" alt="Alumni 4"></div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Left: College Info & Social Media -->
+        <div class="footer-left">
+            <h3>College Name</h3>
+            <p>123 College Street, City, Country</p>
+            <p>Email: <a href="mailto:contact@college.edu">contact@college.edu</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- Right: Email Subscription -->
+        <div class="footer-right">
+            <h3>Stay Connected</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea placeholder="Write your message..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+        <p>© 2025 College Name. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- Fixed Position Button -->
+    <button class="fixed-button">Help & Support</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
