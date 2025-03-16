@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - GLS College</title>
+    <link rel="stylesheet" href="resource.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>📚 GLS College E-Library</h1>
+        <p>Explore a vast collection of books from various domains.</p>
+    </header>
+
+    <main>
+        <!-- IT Field -->
+        <section class="category" id="it">
+            <h2>💻 Information Technology</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <div class="book-front">Java Programming</div>
+                    <div class="book-back">Author: James Gosling<br>Edition: 3rd</div>
+                </div>
+                <div class="book-card">
+                    <div class="book-front">Python Essentials</div>
+                    <div class="book-back">Author: Guido van Rossum<br>Edition: 2nd</div>
+                </div>
+            </div>
+            <form class="add-book-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <input type="text" placeholder="Edition" required>
+                <button type="button" onclick="addBook('it')">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Management Field -->
+        <section class="category" id="management">
+            <h2>📊 Management</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <div class="book-front">Business Strategy</div>
+                    <div class="book-back">Author: Michael Porter<br>Edition: 5th</div>
+                </div>
+            </div>
+            <form class="add-book-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <input type="text" placeholder="Edition" required>
+                <button type="button" onclick="addBook('management')">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Engineering Field -->
+        <section class="category" id="engineering">
+            <h2>🔧 Engineering</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <div class="book-front">Mechanical Design</div>
+                    <div class="book-back">Author: Shigley<br>Edition: 4th</div>
+                </div>
+            </div>
+            <form class="add-book-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <input type="text" placeholder="Edition" required>
+                <button type="button" onclick="addBook('engineering')">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Science Field -->
+        <section class="category" id="science">
+            <h2>🔬 Science</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <div class="book-front">Quantum Physics</div>
+                    <div class="book-back">Author: Richard Feynman<br>Edition: 3rd</div>
+                </div>
+            </div>
+            <form class="add-book-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <input type="text" placeholder="Edition" required>
+                <button type="button" onclick="addBook('science')">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Literature Field -->
+        <section class="category" id="literature">
+            <h2>📖 Literature</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <div class="book-front">Shakespeare’s Plays</div>
+                    <div class="book-back">Author: William Shakespeare<br>Edition: 1st</div>
+                </div>
+            </div>
+            <form class="add-book-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author Name" required>
+                <input type="text" placeholder="Edition" required>
+                <button type="button" onclick="addBook('literature')">Add Book</button>
+            </form>
+        </section>
+    </main>
+
+    <a href="index.html" class="back-button">⬅ Back to Main File</a>
+
+    <script src="resource.js"></script>
+</body>
+</html>
